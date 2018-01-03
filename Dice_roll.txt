@@ -1,0 +1,48 @@
+# diceroll
+
+#Simulation of a dice roll game#
+
+
+from random import *
+
+
+	def roll_dice():
+  
+		round = 1 #counts rounds
+  
+		question = input("Roll? Press 0 for no, 1 for yes.")
+  
+  
+
+		while question == question:
+    
+
+			#If the user answers yes, the game keeps running.
+    
+			if question == "1":
+      
+			print ("Round " + str(round) + ": " + str(randint(0,6)))
+      
+			round = round + 1 
+      
+			question = input("Roll? Press 0 for no, 1 for yes.")
+      
+    
+
+			#If the user answers no, the game stops running.
+    
+			elif question == "0":
+      
+			print("Thanks for playing!")
+      
+			break
+    
+    
+
+			#If the user doesn't answer yes or no, the game keeps prompting them to do so. 
+    
+			else:
+      
+			print("Please enter 0 for no, 1 for yes.")
+      
+			question = input("Roll? Press 0 for no, 1 for yes.")
