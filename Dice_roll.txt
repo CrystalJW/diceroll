@@ -11,7 +11,7 @@ from random import *
 		
 			#If the user answers yes, the game keeps running.
 			if question == "1":
-			print ("Round " + str(round) + ": " + str(randint(0,6)))
+			print ("Round " + str(round) + ": " + str(randint(1,6)))
 			round = round + 1 
 			question = input("Roll? Press 0 for no, 1 for yes.")
 
